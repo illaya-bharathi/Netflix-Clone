@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Login.css'
 import logo from "../../assets/logo.jpg"
 import { login,signup } from '../../firebase'
-import Loading_gif from "../../assets/loading.gif"
+import loading_gif from "../loadingGif/loading.gif"
 
 const Login = () => {
 
@@ -27,7 +27,7 @@ const Login = () => {
 
   return (
     loading ? <div className="login-spinner">
-      <img src={ Loading_gif } alt="" />
+      <img src={ loading_gif } alt="" />
     </div>:
     <div className='login'>
       <img src={logo} alt="" className='login-logo' />
